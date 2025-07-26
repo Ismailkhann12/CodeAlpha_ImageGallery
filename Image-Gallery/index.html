@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Responsive Image-Gallery</title>
+</head>
+<body>
+    <nav class="Navbar">
+        <div class="Logo">
+            <h1>Image-Gallery</h1>
+        </div>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About US</a></li>
+            <li><a href="">Review</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="" class="btn">Login</a></li>
+        </ul>
+        <div class="icon">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+       <h1 class="H1">My Image Gallery</h1>
+     <!-- Filter buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+  </div>
+   <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+    <div class="Image">
+        <div>
+        <img src="City1.avif" alt="" class="Image-city">
+        <img src="City2.avif" alt="" class="Image-city">
+        <img src="City4.avif" alt="" class="Image-city"></div>
+        <div>
+            <img src="City5.avif" alt="" class="Image-city">
+            <img src="City6.jpg" alt=""class="Image-city">
+            <img src="City7.avif" alt=""class="Image-city">
+        </div>
+        <div>
+            <img src="img3.avif" alt="" class="Image-nature">
+            <img src="img5.avif" alt="" class="Image-nature">
+            <img src="img9.avif" alt="" class="Image-nature">
+        </div>
+        <div>
+            <img src="img11.avif" alt="" class="Image-nature">
+            <img src="img13.avif" alt="" class="Image-nature">
+            <img src="img15.avif" alt="" class="Image-nature">
+        </div>
+<footer class="Footer">
+    <div class="Footer-C">
+        
+        <div class="Footer-column">
+            <h3 >Quick Links</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Support</li>
+                <li>Privecy Policy</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        
+        <div class="Footer-column">
+            <h3>Support US</h3>
+            <ul>
+                <li>All Image</li>
+                <li>City Images</li>
+                <li>Nature iImages</li>
+            </ul>
+        </div>
+        
+        <div class="Footer-column">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><a href="#">Address : 98 West 21th Street, Suite 721 New York NY 10016</a></li>
+                <li><a href="#">Phone No : 923360987657</a></li>
+                <li><a href="#">Email : abc@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="Script.js"></script>
+</html>
